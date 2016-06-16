@@ -43,10 +43,12 @@ public:
 			delete head;
 	}
 	Stack& operator=(const Stack &stack) {
-		if (head)
+		if (head && stack.head)
 			*head = *stack.head;
-		else
+		else if (!head && stack.head)
 			head = new Node(*stack.head);
+		else if (head && !stack.head)
+		        delete head;
 		return *this;
 	}
 	void add(Type arg) {
