@@ -49,9 +49,12 @@ public:
 	}
 };
 
-int _tmain(int argc, _TCHAR* argv[]){
-	string word;
-	Monsters *m[] = { new TypeA(cin >> word), new TypeC(cin >> word), new TypeB(cin >> word), new TypeA(cin >> word) };
+int _tmain(int argc, _TCHAR* argv[]) {
+	string word[4];
+	for (int i = 0; i < 4; i++) {
+		cin >> word[i];
+	}
+	Monsters *m[] = { new TypeA(word[0]), new TypeC(word[1]), new TypeB(word[2]), new TypeA(word[3]) };
 	for (int i = 0; i < 4; i++) {
 		m[i]->say();
 	}
