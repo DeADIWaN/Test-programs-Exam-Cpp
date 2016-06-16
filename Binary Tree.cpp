@@ -84,7 +84,7 @@ int _tmain(int argc, _TCHAR* argv[]){
 	tr1.add(2);
 	tr1.add(8);
 	tr1.add(6);
-	tr1.add(3);
+	tr1.add(2);
 
 	Tree tr2 = tr1;
 	tr2.add(10);
