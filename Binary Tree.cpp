@@ -92,5 +92,6 @@ int _tmain(int argc, _TCHAR* argv[]){
 	
 	Tree tr3(51);
 	tr1 = tr3;
+	
 	return 0;
 }
