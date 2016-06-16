@@ -67,7 +67,7 @@ int _tmain(int argc, _TCHAR* argv[]) {
 	s2 = s1;
 	Stack<char> sc1;
 	for (int i = 5; i < 10; i++) {
-		sc1.add(i * i);
+		sc1.add(i * (i + 1));
 	}
 	return 0;
 }
