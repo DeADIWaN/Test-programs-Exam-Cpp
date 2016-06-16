@@ -58,7 +58,7 @@ public:
 
 int _tmain(int argc, _TCHAR* argv[]) {
 	Stack<int> s1;
-	for (int i = 25; i < 31; i++) {
+	for (int i = 1; i < 6; i++) {
 		s1.add(i);
 	}
 	Stack<int> s2;
