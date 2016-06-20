@@ -54,7 +54,7 @@ int _tmain(int argc, _TCHAR* argv[]) {
 	for (int i = 0; i < 4; i++) {
 		cin >> word[i];
 	}
-	Monsters *m[] = { new TypeA(word[0]), new TypeC(word[1]), new TypeB(word[2]), new TypeA(word[3]) };
+	Monsters *m[] = { new TypeA(word[0]), new TypeC(word[3]), new TypeB(word[1]), new TypeA(word[2]) };
 	for (int i = 0; i < 4; i++) {
 		m[i]->say();
 	}
